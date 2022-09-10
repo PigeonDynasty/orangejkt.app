@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background: url(./pic/背景底图.jpg)no-repeat center center fixed;
+    position: relative;
+    background-size: cover;
+}
+
+#logo {
+    margin-left: 20px;
+    padding-top: 20px;
+
+}
+
+#logo_1 {
+    width: 50%;
+}
+
+#text {
+    color: white;
+    text-decoration: none;
+    font-family: 微软雅黑;
+    font-size: 18px;
+}
+
+#navbar {
+    width: 133px;
+    height: 40px;
+    line-height: 46px;
+    text-align: center;
+    float: right;
+}
+
+#content_1 {
+    height: 100%;
+}
+
+#content {
+    margin-top: 20%;
+}
+
+#phone_1 {
+    width: 100%;
+    height: 50%;
+}
+
+#phone {
+    float: left;
+    width: 45%;
+    background: url(./pic/ui.png) no-repeat;
+    background-size: 100%;
+    margin-left: 10px;
+}
+
+#download {
+    width: 50%;
+    float: right;
+}
+
+#ios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+#ewm {
+    margin-left: 8px;
+    margin-top: 2px;
+    width: 134px;
+    height: 134px;
+    display: none;
+}
+
+#icon_ios {
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+
+#Android {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+}
+
+#icon_android {
+    margin-left: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+h2 {
+    color: #f9f9f9;
+    text-align: center;
+    margin-bottom: 15%;
+}
