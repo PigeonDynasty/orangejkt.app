@@ -5,37 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppDownload</title>
-    <link href="./index.css" media="screen and (min-width: 992px)" rel="stylesheet" type="text/css" />
-    
+    <script src="./index.js"></script>
+    <link href="./index.css" media="screen and (min-width: 768px)" rel="stylesheet" type="text/css" />
     <link href="./index_m.css" media="screen and (max-width: 767px)" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-            <div>
-                <div id="nav">
-                    <table width="100%"> 
-                        <tr>
-                            <td>
-                                 <div id="logo">
-                                    <img src="./pic/网页上图标大小.png" alt="" id="logo_1">
-                                </div>
-                            </td>
-                            <td>
-                                <div id="navbar">
-                                    <a id="text" href="https://www.orangejkt.com/">商店</a>                    
-                                 </div>
-                            </td>
-                        </tr>
-                    </table>
-                   
-                    
+        <div>
+            <div id="nav">
+                <div id="logo">
+                    <img src="./pic/网页上图标大小.png" alt="" id="logo_1">
                 </div>
+                <ul>
+                    <li>
+                        <a id="text" href="https://www.orangejkt.com/">Toko</a>                    
+                    </li>
+                    <li>
+                        <a id="text" href="#">
+                            Indonesia
+                            <img src="./pic/arrow.png" alt="">
+                        </a>   
+                        <ul id="plat">
+                            <li id="sp"><a href="./index_english.html">English</a></li>
+                        </ul>   
+                    </li>
+                </ul>
             </div>
-            <div id="content">
-
+        </div>
+       <div id="content" >
                 <div id="content_1">
-                        <h2>这是一条简介</h2>
-
+                    <h2>Sebuah Pengantar</h2>
                     <div id="phone">
                         <img src="./pic/手机样机.png" id="phone_1">
                     </div>
@@ -44,15 +43,15 @@
                             <div id="ios">
                                 <a href="" download=""></a>
                                 <img src="./pic/ios_icon.png" id="icon_ios">
-                                <p>iOS 版</p>
+                                <p>iOS</p>
                                 <div class="dropdown-content">
-                                    <img src="./pic/1 (1).png" alt="" id="ewm">
+                                   <img src="./pic/1 (1).png" alt="" id="ewm">
                                 </div>
                             </div>                         
                             <div id="Android">
                                 <a href="" download=""></a>
                                 <img src="./pic/android_icon.png" id="icon_android">
-                                <p>Android 版</p>
+                                <p>Android</p>
                                 <div class="dropdown-content">
                                     <img src="./pic/1 (1).png" alt="" id="ewm">
                                 </div>
@@ -60,6 +59,39 @@
                         </div>
                     </div>
                 </div>
+        </div>    
+        <div id="footer">
+            <div id="Tentangkami">
+                <a href="#" id="Tentangkami_1">
+                    <h3 id="foot"  onClick="show()">
+                        Tentang kami
+                    </h3>
+                </a>
             </div>
+            <div id="Tentangkami"> 
+                <a id="Tentangkami_1" href="https://www.orangejkt.com/Kebijakan-Privasi-n1340963.html">
+                    <h3 id="foot_1">
+                        Kebijakan Privasi        
+                    </h3>
+                </a> 
+            </div>
+            <div>
+                <a id="aboutUs">
+                    Orange didirikan di Jakarta pada tahun 2017.selama ini, ORANGE menyediakan produk dengan kualitas yang sama tapi harga lebih murah untuk para pelanggan sebagai titik awal. Dengan meminjam produk frekuensi tinggi,dan layanan tinggat tinggi, di sebarkan secara global grup supplier indonesia dan pergudangan lokal yang banyak, dalam waktu kurang dari 5 tahun sudah menghasilkan ribuan juta anggota pembeli, melalui berbagai macam jenis produk, dan customer service yang ramah dan professional, membuat pelanggan merasakan rasa belanja produk yang nyaman dan praktis. Kedepan, Kami akan tak henti-hentinya berusaha untuk menjadi merek yang dapat dipercaya oleh konsumen Indonesia.
+                </a>   
+            </div>
+        </div>  
+        <div class="part">
+            <img src="./pic/off.png" alt="" onClick="hide()">
+            <h2>
+                Tentang kami
+            </h2>
+            <p>
+                Orange didirikan di Jakarta pada tahun 2017.</br> 
+                selama ini, ORANGE menyediakan produk dengan kualitas yang sama tapi harga lebih murah untuk para pelanggan sebagai titik awal.</br> 
+                Dengan meminjam produk frekuensi tinggi,dan layanan tinggat tinggi, di sebarkan secara global grup supplier indonesia dan pergudangan lokal yang banyak, dalam waktu kurang dari 5 tahun sudah menghasilkan ribuan juta anggota pembeli, melalui berbagai macam jenis produk, dan customer service yang ramah dan professional, membuat pelanggan merasakan rasa belanja produk yang nyaman dan praktis. </br> 
+                Kedepan, Kami akan tak henti-hentinya berusaha untuk menjadi merek yang dapat dipercaya oleh konsumen Indonesia.
+            </p>     
+        <div>
 </body>
 </html>

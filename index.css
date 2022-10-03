@@ -6,21 +6,71 @@
 
     html,
     body {
-        width: 100%;
-        height: 100%;
         height: 100%;
         position: relative;
         background: url(./pic/背景底图.jpg) no-repeat center center fixed;
+        background-size: cover;
     }
 
-    table {
-        line-height: 0px;
+    ul {
+        float: right;
+        margin: 0 10px 0 0;
+        text-align: center;
+        list-style: none;
     }
 
+    li {
+        padding-top: 30px;
+        float: left;
+        text-align: center;
+        display: inline;
+    }
 
+    li a:visited {
+        color: #ededed;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: gray;
+    }
+
+    #plat {
+        display: none;
+        position: absolute;
+        width: 133px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #sp {
+        padding-top: 10px;
+        background-color: #fff;
+        border-radius: 20px;
+        height: 50px;
+    }
+
+    #sp a {
+        color: rgb(0, 0, 0);
+    }
+
+    #plat a:link {
+        color: rgb(0, 0, 0);
+    }
+
+    li a:link {
+        color: #ededed;
+    }
+
+    li:hover #plat {
+        display: block;
+    }
+
+    #logo_1,
     #logo {
         margin-left: 20px;
         padding-top: 20px;
+        display: inline;
     }
 
     #navbar {
@@ -37,6 +87,18 @@
         text-decoration: none;
         font-family: 微软雅黑;
         font-size: 18px;
+        align-items: center;
+        display: block;
+    }
+
+    li a {
+        width: 155px;
+        height: 46px;
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        line-height: 46px;
+        text-decoration: none;
     }
 
     #content {
@@ -47,7 +109,7 @@
 
     #content_1 {
         width: 800px;
-        height: 700px;
+        height: 600px;
         margin: 0px auto 0px auto;
         padding-top: 50px;
     }
@@ -65,23 +127,25 @@
     }
 
     #app {
-        width: 400px;
         float: right;
         margin-top: 50px;
-        margin-right: 50px;
     }
 
-    h2 {
+    #content_1 h2 {
         color: #fff;
         font-size: 48px;
         font-weight: 500;
         float: right;
-        margin-right: 13%;
         margin-top: 100px;
+        min-width: 435px;
+        text-align: center;
+
     }
 
     #download {
         margin-top: 40px;
+        height: 40px;
+        margin-right: 50px;
     }
 
     #ios {
@@ -104,7 +168,7 @@
         position: absolute;
         background-color: #f9f9f9;
         min-width: 150px;
-        height: 140px;
+        height: 150px;
         top: 40px;
     }
 
@@ -127,20 +191,20 @@
     }
 
     #ewm {
-        margin-left: 8px;
-        margin-top: 2px;
-        width: 134px;
-        height: 134px;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 130px;
+        height: 130px;
     }
 
     #icon_ios {
-        margin-left: 30px;
+        margin-left: 40px;
         width: 25px;
         height: 25px;
     }
 
     #icon_android {
-        margin-left: 15px;
+        margin-left: 25px;
         width: 25px;
         height: 25px;
     }
@@ -162,4 +226,48 @@
     p {
         margin-top: 2px;
         margin-left: 10px;
+    }
+
+    #footer {
+        width: 1200px;
+        height: auto;
+        margin: 30px auto 0px auto;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    #foot {
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 15px;
+        display: inline-block;
+        margin-right: 450px;
+        margin-left: 250px;
+        pointer-events: none;
+    }
+
+    #foot_1 {
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+
+    #foot_1 a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #aboutUs {
+        color: rgb(175, 175, 175)
+    }
+
+    #Tentangkami {
+        display: inline;
+    }
+
+    .part {
+        display: none;
     }
