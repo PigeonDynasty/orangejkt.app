@@ -90,7 +90,19 @@
         text-decoration: none;
     }
 
-    .app-title {
+    main {
+        flex: 1;
+        width: 800px;
+        margin: 50px auto 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .app-title-mobile {
+        display: none;
+    }
+
+    .app-title-pc {
         color: #fff;
         font-size: 48px;
         font-weight: 500;
@@ -126,8 +138,6 @@
 
     #ios {
         display: flex;
-        flex-direction: row;
-        align-items: center;
         width: 150px;
         height: 40px;
         border-radius: 20px;
@@ -137,6 +147,15 @@
         cursor: pointer;
         position: relative;
         float: left;
+    }
+
+    #ios>a,
+    #Android>a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
     }
 
     .dropdown-content {
@@ -175,14 +194,16 @@
 
     #icon_ios {
         margin-left: 40px;
-        width: 25px;
-        height: 25px;
+        width: 23px;
+        height: 23px;
+        margin-right: 6px;
     }
 
     #icon_android {
         margin-left: 25px;
         width: 25px;
         height: 25px;
+        margin-right: 6px;
     }
 
     #Android {
@@ -211,13 +232,6 @@
         overflow: hidden;
     }
 
-    .footer-title {
-        color: #fff;
-        font-weight: 500;
-        margin-bottom: 15px;
-        display: inline-block;
-        pointer-events: none;
-    }
 
     #aboutUs {
         color: rgb(175, 175, 175)
@@ -227,11 +241,26 @@
         display: flex;
     }
 
-    #Tentangkami a {
+    #Tentangkami .footer-title {
         flex: 1;
         text-align: center;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    #Tentangkami .footer-title>a {
+        color: #fff;
+        text-decoration: none;
     }
 
     .part {
         display: none;
+    }
+
+
+    .clear-both::after {
+        display: block;
+        content: '';
+        overflow: hidden;
+        clear: both;
     }

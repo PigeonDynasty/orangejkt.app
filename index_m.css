@@ -13,7 +13,6 @@ body {
     height: 100%;
 }
 
-#logo_1,
 #logo {
     display: inline;
     width: 60px;
@@ -93,51 +92,70 @@ li:hover #plat {
     float: right;
 }
 
-#content_1 {
-    height: 100%;
-    width: 375px;
-    margin: 10% auto 0 auto;
+main {
+    flex: 1;
+    width: 100%;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-#content {
-    width: 100%;
-    height: 450px;
-    position: relative;
+.app-title-pc {
+    display: none;
 }
 
-#phone_1 {
+.app-title-mobile {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    float: right;
+    /* margin-top: 20px;
+    margin-bottom: 20%; */
+    text-align: center;
     width: 100%;
-    height: 50%;
 }
 
 #phone {
     float: left;
-    width: 45%;
-    background: url(./pic/ui.png) no-repeat;
+    background: url(./pic/ui.png) no-repeat center;
     background-size: 100%;
-    margin-left: 10px;
+    width: 50%;
+}
+
+#phone_1 {
+    width: 100%;
+    height: 100%;
 }
 
 #download {
-    width: 50%;
     float: right;
-    max-width: 300px;
+    width: 50%;
+    text-align: center;
 }
 
 #ios {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
-    width: 150px;
+    width: 130px;
     height: 40px;
     border-radius: 20px;
     background-color: #fff;
-    margin-right: 15px;
     cursor: pointer;
     position: relative;
-    float: right;
     margin-top: 90px;
     margin-bottom: 50px;
+}
+
+#ios>a,
+#Android>a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
 #ewm {
@@ -149,28 +167,26 @@ li:hover #plat {
 }
 
 #icon_ios {
-    margin-left: 40px;
+    margin-left: 30px;
     margin-right: 5px;
     width: 25px;
     height: 25px;
 }
 
 #Android {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
-    width: 150px;
+    width: 130px;
     height: 40px;
     border-radius: 20px;
     background-color: #fff;
-    margin-right: 15px;
     cursor: pointer;
     position: relative;
-    float: right;
 }
 
 #icon_android {
-    margin-left: 25px;
+    margin-left: 18px;
     margin-right: 5px;
     width: 25px;
     height: 25px;
@@ -187,7 +203,7 @@ li:hover #plat {
     height: auto;
     margin: 0px auto 0px auto;
     text-align: center;
-    bottom: 10px;
+    bottom: 20%;
 }
 
 #aboutUs {
@@ -203,30 +219,36 @@ li:hover #plat {
 
 
 #Tentangkami {
-    text-decoration: none;
-    color: #fff;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
-#Tentangkami_1 {
-    text-decoration: none;
+#Tentangkami .footer-title {
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#Tentangkami .footer-title>a {
     color: #fff;
-    display: inline-block;
+    text-decoration: none;
 }
 
 .part {
     display: none;
     background-color: #2f3130;
-    height: 600px;
-    width: 300px;
-    position: absolute;
-    margin: 10%;
-    top: 5%;
     border-radius: 20px;
+    position: fixed;
+    top: 5%;
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+    overflow: hidden;
 }
 
 .part h2 {
-    margin-top: 35px;
+    margin-top: 9px;
     color: #dbdbdb;
     text-align: center;
 }
@@ -235,11 +257,25 @@ li:hover #plat {
     text-align: center;
     color: #dbdbdb;
     padding: 15px 10px 0 10px;
-    line-height: 23px;
+    line-height: 26px;
     font-weight: 100;
+    overflow: auto;
+    height: calc(100% - 40px);
 }
 
 .part img {
     width: 35px;
     float: right;
+    padding-right: 10px;
+}
+
+.clear-both {
+    width: 100%;
+}
+
+.clear-both::after {
+    display: block;
+    content: '';
+    overflow: hidden;
+    clear: both;
 }

@@ -11,89 +11,91 @@
 </head>
 
 <body>
-        <div>
-            <div id="nav">
-                <div id="logo">
-                    <img src="./pic/网页上图标大小.png" alt="" id="logo_1">
+    <div style="display: flex;flex-direction: column;height: 100%;width:90%; margin:0 auto;">
+        <header>
+            <img src="./pic/网页上图标大小.png" alt="" id="logo">
+            <ul>
+                <li>
+                    <a id="text" href="https://www.orangejkt.com/">Shop</a>
+                </li>
+                <li>
+                    <a id="text" href="#">
+                        English
+                        <img src="./pic/arrow.png" alt="">
+                    </a>
+                    <ul id="plat">
+                        <li id="sp"><a href="./index.html">Indonesia</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <h2 class="app-title-mobile">Synopsis</h2>
+            <div class="clear-both">
+                <h2 class="app-title-pc">Synopsis</h2>
+                <div id="phone">
+                    <img src="./pic/手机样机.png" id="phone_1">
                 </div>
-                <ul>
-                    <li>
-                        <a id="text" href="https://www.orangejkt.com/">Shop</a>                    
-                    </li>
-                    <li>
-                        <a id="text" href="#">
-                            English
-                            <img src="./pic/arrow.png" alt="">
-                        </a>   
-                        <ul id="plat">
-                            <li id="sp"><a href="./index.html">Indonesia</a></li>
-                        </ul>   
-                    </li>
-                </ul>
-            </div>
-        </div>
-       <div id="content" >
-                <div id="content_1">
-                    <h2>Synopsis</h2>
-                    <div id="phone">
-                        <img src="./pic/手机样机.png" id="phone_1">
-                    </div>
-                    <div id="app">
-                        <div id="download">
-                            <div id="ios">
-                                <a href="" download=""></a>
+                <div id="app">
+                    <div id="download">
+                        <div id="ios">
+                            <a href="" download="">
                                 <img src="./pic/ios_icon.png" id="icon_ios">
-                                <p>iOS</p>
-                                <div class="dropdown-content">
-                                   <img src="./pic/1 (1).png" alt="" id="ewm">
-                                </div>
-                            </div>                         
-                            <div id="Android">
-                                <a href="" download=""></a>
+                                <span>iOS</span>
+                            </a>
+                            <div class="dropdown-content">
+                                <img src="./pic/1 (1).png" alt="" id="ewm">
+                            </div>
+                        </div>
+                        <div id="Android">
+                            <a href="" download="">
                                 <img src="./pic/android_icon.png" id="icon_android">
-                                <p>Android</p>
-                                <div class="dropdown-content">
-                                    <img src="./pic/1 (1).png" alt="" id="ewm">
-                                </div>
+                                <span>Android</span>
+                            </a>                        
+                            <div class="dropdown-content">
+                                <img src="./pic/1 (1).png" alt="" id="ewm">
                             </div>
                         </div>
                     </div>
                 </div>
-        </div>    
-        <div id="footer">
-            <div id="Tentangkami">
-                <a href="#" id="Tentangkami_1">
-                    <h3 id="foot"  onClick="show()">
-                        About Us
-                    </h3>
-                </a>
             </div>
-            <div id="Tentangkami"> 
-                <a id="Tentangkami_1" href="https://www.orangejkt.com/Kebijakan-Privasi-n1340963.html">
-                    <h3 id="foot_1">
-                        Privacy Policy       
+        </main>
+        <footer id="footer">
+            <div id="Tentangkami">
+                    <h3 class="footer-title" >
+                        <a href="#" onClick="show()">
+                            About Us
+                        </a>
                     </h3>
-                </a> 
+                    <h3 class="footer-title">
+                        <a href="https://www.orangejkt.com/Kebijakan-Privasi-n1340963.html">                    
+                            Privacy Policy
+                        </a>
+                    </h3>
+                    </h3>
+                
+                
             </div>
             <div>
                 <a id="aboutUs">
                     Orange was founded in Jakarta in 2017. Since then, Orange has been providing customers with cost-effective products as the starting point. With high-frequency product iterations, efficient service circulation links, global cluster supply chain and local diversified warehouse layout, Orange has accumulated nearly ten million consumer groups in less than five years. Through a multi category and multi style product matrix, it provides considerate and professional customer service, Bring consumers an easy and convenient shopping experience. In the future, we will make unremitting efforts to become a trustworthy brand for Indonesian local consumers.                
-                </a>   
+                </a>
             </div>
-        </div>  
-        <div class="part">
-            <img src="./pic/off.png" alt="" onClick="hide()">
-            <h2>
-                Tentang kami
-            </h2>
-            <p>
-                Orange was founded in Jakarta in 2017. </br>
-                Since then, Orange has been providing customers with cost-effective products as the starting point.</br>
-                With high-frequency product iterations, efficient service circulation links, global cluster supply chain and local diversified warehouse layout, Orange has accumulated nearly ten million consumer groups in less than five years. </br>
-                Through a multi category and multi style product matrix, it provides considerate and professional customer service, Bring consumers an easy and convenient shopping experience. In the future, we will make unremitting efforts to become a trustworthy brand for Indonesian local consumers.                
+        </footer>
+    </div>
+    <div class="part">
+        <h2>
+            About Us
+            <img src="./pic/off.png" alt="" onClick="hide()"/>
+        </h2>
+        <p>
+            Orange was founded in Jakarta in 2017. </br>
+            Since then, Orange has been providing customers with cost-effective products as the starting point.</br>
+            With high-frequency product iterations, efficient service circulation links, global cluster supply chain and local diversified warehouse layout, Orange has accumulated nearly ten million consumer groups in less than five years. </br>
+            Through a multi category and multi style product matrix, it provides considerate and professional customer service, Bring consumers an easy and convenient shopping experience. In the future, we will make unremitting efforts to become a trustworthy brand for Indonesian local consumers.                
                 
-            </p>     
-        <div>
-</div>
+        </p>
+    <div> 
 </body>
+
 </html>
