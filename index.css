@@ -66,20 +66,9 @@
         display: block;
     }
 
-    #logo_1,
     #logo {
-        margin-left: 20px;
         padding-top: 20px;
         display: inline;
-    }
-
-    #navbar {
-        width: 133px;
-        height: 46px;
-        line-height: 46px;
-        text-align: center;
-        float: right;
-        margin-right: 20px;
     }
 
     #text {
@@ -101,37 +90,7 @@
         text-decoration: none;
     }
 
-    #content {
-        width: 100%;
-        height: 675px;
-        margin: 0px auto 0 auto;
-    }
-
-    #content_1 {
-        width: 800px;
-        height: 600px;
-        margin: 0px auto 0px auto;
-        padding-top: 50px;
-    }
-
-    #phone {
-        position: absolute;
-        background: url(./pic/ui.png) no-repeat;
-        background-size: 100%;
-        margin-left: 40px;
-    }
-
-    #phone_1 {
-        width: 300px;
-        height: 600px;
-    }
-
-    #app {
-        float: right;
-        margin-top: 50px;
-    }
-
-    #content_1 h2 {
+    .app-title {
         color: #fff;
         font-size: 48px;
         font-weight: 500;
@@ -139,7 +98,24 @@
         margin-top: 100px;
         min-width: 435px;
         text-align: center;
+    }
 
+    #phone {
+        float: left;
+        background: url(./pic/ui.png) no-repeat center;
+        background-size: 100%;
+        height: 100%;
+        max-width: 50%;
+    }
+
+    #phone_1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #app {
+        float: right;
+        margin-top: 50px;
     }
 
     #download {
@@ -229,35 +205,18 @@
     }
 
     #footer {
-        width: 1200px;
         height: auto;
-        margin: 30px auto 0px auto;
+        margin: 30px auto 10px auto;
         align-items: center;
         overflow: hidden;
     }
 
-    #foot {
+    .footer-title {
         color: #fff;
         font-weight: 500;
-        text-align: center;
         margin-bottom: 15px;
         display: inline-block;
-        margin-right: 450px;
-        margin-left: 250px;
         pointer-events: none;
-    }
-
-    #foot_1 {
-        color: #fff;
-        font-weight: 500;
-        text-align: center;
-        margin-bottom: 15px;
-        display: inline-block;
-    }
-
-    #foot_1 a {
-        color: #fff;
-        text-decoration: none;
     }
 
     #aboutUs {
@@ -265,7 +224,12 @@
     }
 
     #Tentangkami {
-        display: inline;
+        display: flex;
+    }
+
+    #Tentangkami a {
+        flex: 1;
+        text-align: center;
     }
 
     .part {
