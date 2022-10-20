@@ -13,6 +13,14 @@ body {
     height: 100%;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
 #logo {
     display: inline;
     width: 60px;
@@ -267,13 +275,14 @@ main {
     width: 35px;
     float: right;
     padding-right: 10px;
+    margin-top: -2px;
 }
 
-.clear-both {
+.app {
     width: 100%;
 }
 
-.clear-both::after {
+.app::after {
     display: block;
     content: '';
     overflow: hidden;

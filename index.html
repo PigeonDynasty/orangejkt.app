@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppDownload</title>
+    <title>Orangejkt</title>
     <script src="./index.js"></script>
     <link href="./index.css" media="screen and (min-width: 768px)" rel="stylesheet" type="text/css" />
     <link href="./index_m.css" media="screen and (max-width: 767px)" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <div style="display: flex;flex-direction: column;height: 100%;width:90%; margin:0 auto;">
+    <div class="container">
         <header>
             <img src="./pic/网页上图标大小.png" alt="" id="logo">
             <ul>
@@ -32,12 +32,12 @@
         </header>
         <main>
             <h2 class="app-title-mobile">Sebuah Pengantar</h2>
-            <div class="clear-both">
-                <h2 class="app-title-pc">Sebuah Pengantar</h2>
+            <div class="app">
                 <div id="phone">
                     <img src="./pic/手机样机.png" id="phone_1">
                 </div>
                 <div id="app">
+                    <h2 class="app-title-pc">Sebuah Pengantar</h2>
                     <div id="download">
                         <div id="ios">
                             <a href="" download="">
@@ -52,7 +52,7 @@
                             <a href="" download="">
                                 <img src="./pic/android_icon.png" id="icon_android">
                                 <span>Android</span>
-                            </a>                        
+                            </a>
                             <div class="dropdown-content">
                                 <img src="./pic/1 (1).png" alt="" id="ewm">
                             </div>
@@ -63,41 +63,39 @@
         </main>
         <footer id="footer">
             <div id="Tentangkami">
-                    <h3 class="footer-title" >
-                        <a href="#" onClick="show()">
-                            Tentang kami
-                        </a>
-                    </h3>
-                    <h3 class="footer-title">
-                        <a href="https://www.orangejkt.com/Kebijakan-Privasi-n1340963.html">                    
-                            Kebijakan Privasi
-                        </a>
-                    </h3>
-                    </h3>
-                
-                
+                <h3 class="footer-title">
+                    <a href="#" onClick="show()">
+                        Tentang kami
+                    </a>
+                </h3>
+                <h3 class="footer-title">
+                    <a href="https://www.orangejkt.com/Kebijakan-Privasi-n1340963.html">
+                        Kebijakan Privasi
+                    </a>
+                </h3>
+                </h3>
+
+
             </div>
-            <div>
-                <a id="aboutUs">
-                    Orange didirikan di Jakarta pada tahun 2017.selama ini, ORANGE menyediakan produk dengan kualitas
-                    yang
-                    sama tapi harga lebih murah untuk para pelanggan sebagai titik awal. Dengan meminjam produk
-                    frekuensi
-                    tinggi,dan layanan tinggat tinggi, di sebarkan secara global grup supplier indonesia dan pergudangan
-                    lokal yang banyak, dalam waktu kurang dari 5 tahun sudah menghasilkan ribuan juta anggota pembeli,
-                    melalui berbagai macam jenis produk, dan customer service yang ramah dan professional, membuat
-                    pelanggan
-                    merasakan rasa belanja produk yang nyaman dan praktis. Kedepan, Kami akan tak henti-hentinya
-                    berusaha
-                    untuk menjadi merek yang dapat dipercaya oleh konsumen Indonesia.
-                </a>
+            <div id="aboutUs">
+                Orange didirikan di Jakarta pada tahun 2017.selama ini, ORANGE menyediakan produk dengan kualitas
+                yang
+                sama tapi harga lebih murah untuk para pelanggan sebagai titik awal. Dengan meminjam produk
+                frekuensi
+                tinggi,dan layanan tinggat tinggi, di sebarkan secara global grup supplier indonesia dan pergudangan
+                lokal yang banyak, dalam waktu kurang dari 5 tahun sudah menghasilkan ribuan juta anggota pembeli,
+                melalui berbagai macam jenis produk, dan customer service yang ramah dan professional, membuat
+                pelanggan
+                merasakan rasa belanja produk yang nyaman dan praktis. Kedepan, Kami akan tak henti-hentinya
+                berusaha
+                untuk menjadi merek yang dapat dipercaya oleh konsumen Indonesia.
             </div>
         </footer>
     </div>
     <div class="part">
         <h2>
             Tentang kami
-            <img src="./pic/off.png" alt="" onClick="hide()"/>
+            <img src="./pic/off.png" alt="" onClick="hide()" />
         </h2>
         <p>
             Orange didirikan di Jakarta pada tahun 2017.</br>
@@ -110,7 +108,7 @@
             Kedepan, Kami akan tak henti-hentinya berusaha untuk menjadi merek yang dapat dipercaya oleh konsumen
             Indonesia.
         </p>
-    <div> 
+    </div>
 </body>
 
 </html>

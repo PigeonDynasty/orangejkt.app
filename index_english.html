@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppDownload</title>
+    <title>Orangejkt</title>
     <script src="./index.js"></script>
     <link href="./index.css" media="screen and (min-width: 768px)" rel="stylesheet" type="text/css" />
     <link href="./index_m.css" media="screen and (max-width: 767px)" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <div style="display: flex;flex-direction: column;height: 100%;width:90%; margin:0 auto;">
+    <div class="container">
         <header>
             <img src="./pic/网页上图标大小.png" alt="" id="logo">
             <ul>
@@ -31,12 +32,12 @@
         </header>
         <main>
             <h2 class="app-title-mobile">Synopsis</h2>
-            <div class="clear-both">
-                <h2 class="app-title-pc">Synopsis</h2>
+            <div class="app">
                 <div id="phone">
                     <img src="./pic/手机样机.png" id="phone_1">
                 </div>
                 <div id="app">
+                    <h2 class="app-title-pc">Synopsis</h2>
                     <div id="download">
                         <div id="ios">
                             <a href="" download="">
@@ -51,7 +52,7 @@
                             <a href="" download="">
                                 <img src="./pic/android_icon.png" id="icon_android">
                                 <span>Android</span>
-                            </a>                        
+                            </a>
                             <div class="dropdown-content">
                                 <img src="./pic/1 (1).png" alt="" id="ewm">
                             </div>
@@ -62,40 +63,44 @@
         </main>
         <footer id="footer">
             <div id="Tentangkami">
-                    <h3 class="footer-title" >
-                        <a href="#" onClick="show()">
-                            About Us
-                        </a>
-                    </h3>
-                    <h3 class="footer-title">
-                        <a href="https://www.orangejkt.com/Kebijakan-Privasi-n1340963.html">                    
-                            Privacy Policy
-                        </a>
-                    </h3>
-                    </h3>
-                
-                
+                <h3 class="footer-title">
+                    <a href="#" onClick="show()">
+                        About Us
+                    </a>
+                </h3>
+                <h3 class="footer-title">
+                    <a href="https://www.orangejkt.com/Kebijakan-Privasi-n1340963.html">
+                        Privacy Policy
+                    </a>
+                </h3>
             </div>
-            <div>
-                <a id="aboutUs">
-                    Orange was founded in Jakarta in 2017. Since then, Orange has been providing customers with cost-effective products as the starting point. With high-frequency product iterations, efficient service circulation links, global cluster supply chain and local diversified warehouse layout, Orange has accumulated nearly ten million consumer groups in less than five years. Through a multi category and multi style product matrix, it provides considerate and professional customer service, Bring consumers an easy and convenient shopping experience. In the future, we will make unremitting efforts to become a trustworthy brand for Indonesian local consumers.                
-                </a>
+            <div id="aboutUs">
+                Orange was founded in Jakarta in 2017. Since then, Orange has been providing customers with
+                cost-effective products as the starting point. With high-frequency product iterations, efficient
+                service circulation links, global cluster supply chain and local diversified warehouse layout,
+                Orange has accumulated nearly ten million consumer groups in less than five years. Through a multi
+                category and multi style product matrix, it provides considerate and professional customer service,
+                Bring consumers an easy and convenient shopping experience. In the future, we will make unremitting
+                efforts to become a trustworthy brand for Indonesian local consumers.
             </div>
         </footer>
     </div>
     <div class="part">
         <h2>
             About Us
-            <img src="./pic/off.png" alt="" onClick="hide()"/>
+            <img src="./pic/off.png" alt="" onClick="hide()" />
         </h2>
         <p>
             Orange was founded in Jakarta in 2017. </br>
             Since then, Orange has been providing customers with cost-effective products as the starting point.</br>
-            With high-frequency product iterations, efficient service circulation links, global cluster supply chain and local diversified warehouse layout, Orange has accumulated nearly ten million consumer groups in less than five years. </br>
-            Through a multi category and multi style product matrix, it provides considerate and professional customer service, Bring consumers an easy and convenient shopping experience. In the future, we will make unremitting efforts to become a trustworthy brand for Indonesian local consumers.                
-                
+            With high-frequency product iterations, efficient service circulation links, global cluster supply chain and
+            local diversified warehouse layout, Orange has accumulated nearly ten million consumer groups in less than
+            five years. </br>
+            Through a multi category and multi style product matrix, it provides considerate and professional customer
+            service, Bring consumers an easy and convenient shopping experience. In the future, we will make unremitting
+            efforts to become a trustworthy brand for Indonesian local consumers.
         </p>
-    <div> 
+    </div>
 </body>
 
 </html>
